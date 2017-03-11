@@ -256,7 +256,7 @@ kimchi.template_edit_main = function() {
                 if (storageData.storageVolume) {
                     storageData.storageDisk = storagePoolsInfo[thisName].volSize;
                 }
-                if (!storageData.storageType) {
+                if (storageData.storageType == null) {
                     storageData.storageType = storagePoolsInfo[thisName].type;
                 }
 
